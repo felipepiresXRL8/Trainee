@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.ts" defer></script>
+</head>
+<body>
+    <div id="pai">
+        <div class="header">
+            <h1>iTask Manager</h1>
+            <p>Organizador de atividades</p>
+
+        </div>
+
+        <div class="container">
+            <div class="input">
+                <label for="input-titulo">Título</label>
+                <input type="text" id="input-titulo" placeholder="O que quer fazer?">
+                
+            </div>
+
+            <div class="input">
+                <label for="input-descricao">Descrição</label>
+                <textarea id="input-descricao" placeholder="Detalhe a tarefa"></textarea>
+
+            </div>
+
+            <button id="botao">Adicionar Tarefa</button>
+
+
+        </div>
+
+        <div class="divisor"></div>
+
+        <div id="listadetarefas"></div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
