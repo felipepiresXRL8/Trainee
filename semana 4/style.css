@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+
+
+}
+
+#pai {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.header p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre cada campo */
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+#botao {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#botao:hover {
+    background-color: #2980b9;
+}
+
+.divisor {
+    height: 1px;
+    background-color: #eee;
+    margin: 25px 0;
+
+}
+
+.task-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #fdffdf;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.task-card input[type="checkbox"] {
+    width: 20px;    
+    height: 20px;   
+    cursor: pointer;
+    margin-top: 5px; 
+}
+
+.card-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-info p {
+    color: #555;
+    font-size: 14px;
+}
+
+.card-info small {
+    color: #999;
+    display: block;
+    margin-top: 10px;
+}
+
+
+.task-card.concluida {
+    background-color: #e8f5e9;
+    border-left-color: #4caf50;
+    opacity: 0.6;
+}
+
+.task-card.concluida .card-info h3, 
+.task-card.concluida .card-info p {
+    text-decoration: line-through;
+}
